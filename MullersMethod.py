@@ -61,10 +61,18 @@ while VAL <= 100.0:
 try:
     p0 = float(input("Enter p_0 = "))
 except ValueError:
-    print(f"Error: Invalid character detected")
+    print(f"Error: Invalid character. Input a number.")
     sys.exit()
-p1 = float(input("Enter p_1 = "))
-p2 = float(input("Enter p_2 = "))
+try:
+    p1 = float(input("Enter p_1 = "))
+except ValueError:
+    print(f"Error: Invalid charater. Input a number.")
+    sys.exit()
+try:
+    p2 = float(input("Enter p_2 = "))
+except ValueError:
+    print(f"Error: Invalid character. Input a number.")
+    sys.exit()
 
 # generates denominators 
 h1 = p1 - p0
