@@ -58,6 +58,7 @@ while VAL <= 1000.0:
         sys.exit()
 
 # initial conditions (points) that create an approximating parabola
+print("Ensure initial points are distinct values.")
 try:
     p0 = float(input("Enter p_0 = "))
 except ValueError:
