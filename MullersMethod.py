@@ -109,3 +109,4 @@ for i in range(int(N)):
     d1 = (f(p1) - f(p0)) / h1
     d2 = (f(p2) - f(p1)) / h2
     d = (d2 - d1) / (h2 + h1)
+print(f"Number of iterations:",i)
