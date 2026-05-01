@@ -46,8 +46,8 @@ f = lambda x: eval(poly_str, {"__builtins__":{}}, {"x":x})
 # {"x":x} tells eval x is the only variable
 
 # Catches invalid math operations
-VAL = -100.0
-while VAL <= 100.0:
+VAL = -1000.0
+while VAL <= 1000.0:
     try:
         f(VAL)
         VAL += 0.05 # creates more than just integer testing points
