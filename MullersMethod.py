@@ -24,12 +24,12 @@ Output that should be generated:
 '''
 # ** for exponents 
 # stopping criteria
-print("Establish stopping criteria")
+print("\nEstablish stopping criteria")
 N = input("Enter the maximum number of iterations: ")
 TOL = 10**int(input("Enter an exponent for tolerance: "))
 
 # specific function
-poly_str = input("Type polynomial in terms of x (use ** for exponents): ")
+poly_str = input("\nType polynomial in terms of x (use ** for exponents): ")
 if not re.match(r'^[0-9x\+\-\*\/\.\s\(\)]+$',poly_str):
     print("Error: Invalid characters detected.")
     sys.exit()
