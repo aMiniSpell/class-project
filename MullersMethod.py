@@ -58,7 +58,7 @@ while VAL <= 1000.0:
         sys.exit()
 
 # initial conditions (points) that create an approximating parabola
-print("Ensure initial points are distinct values.")
+print("\nEnsure initial points are distinct values.")
 try:
     p0 = float(input("Enter p_0 = "))
 except ValueError:
@@ -96,8 +96,10 @@ for i in range(int(N)):
     p = p2 + h
     if abs(h) < TOL:
         if isinstance(p,complex):
+            print(" ")
             print(f"Root: {p.real:.15f} + {p.imag:.5f}i")
         else:
+            print(" ")
             print(f"Root:{p:.15f}")
         break
     # overrides previous values with new values
